@@ -1,0 +1,17 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: pokoapp
+    src: .
+    engine: nodejs16
+    presets:
+      env:
+        - name: SECRET
+
+          default: 'palvelimenomatokensalasana112233'
+    primary: true
+    run: node index.js
+
+    public_routes:
+      - /*
+      - /*/*

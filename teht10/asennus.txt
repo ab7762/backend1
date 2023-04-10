@@ -1,0 +1,11 @@
+Alkuun tein käyttäjätilin MongoDB-Atlas palveluun. Tein sinne tietokannan, johon tein tarvittavat
+configuraatiot. Kantaan saa yhteyden nyt kaikista ip-osoitteista. 
+
+Vaihdoin sovelluksen tietokantayhteyteen luomani kannan endpointin. Nyt sovelluksen yhteys
+on auki Atlas-palvelun kantaan.
+
+Loin käyttäjätilin myös Deta-Space palveluun ja latasin express-sovelluksen palveluun.
+Tein Spacefileen tarvittavat configuraatiot, jotta sovellus automaattisesti käynnistyy sekä
+Environment-muuttujat toimivat. 
+
+Nyt sovellus pyörii Deta-Space palvelussa sekä kanta on Atlas-palvelussa.

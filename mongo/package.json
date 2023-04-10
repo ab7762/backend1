@@ -1,0 +1,19 @@
+{
+  "name": "mongoose_basics",
+  "version": "1.0.0",
+  "description": "mongoose basic example",
+  "main": "mongoose_basics.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "tuito",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

@@ -1,0 +1,7 @@
+Toteuttaisin kirjautumisen niin, että frontendissä tehtäisiin google-kirjautuminen.
+Id-token lähtisi sen jälkeen backendin puolelle, jossa suoritetaan tunnistautuminen. 
+Tilanteesta / sovelluksesta riippuen tiedot voidaan tallentaa tietokantaan. 
+
+Backendissä luodaan profiilitiedoista uusi JWT-token, joka lähetetään front-endin puolelle sessionstorageen.
+Front-endin puolella saadun tokenin avulla päästään muutoin salatuille sivuille tai voidaan käyttää
+rest-apin salattuja reittejä. 

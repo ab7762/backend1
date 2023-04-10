@@ -1,0 +1,29 @@
+<!-- Alla näytetään opiskelijat kannasta. Opiskelijoiden haku tapahtuu kun kirjautuminen onnistuu. 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <p>
+      <a href="/sivu1">sivu1</a> | <a href="/sivu2">sivu2</a> |
+      <a href="/logout">logout</a>
+    </p>
+
+    <h1><%= title %></h1>
+    <p>Session id on <%= sessid %></p>
+    <ul>
+      <% students.forEach((student) => { %>
+      <li><%= student.name %> - <%= student.email %></li>
+      <ul>
+        <% student.grades.forEach((grades) => { %>
+        <li><%= grades.coursecode %> - <%= grades.grade %></li>
+        <% }) %>
+      </ul>
+      <% }) %>
+    </ul>
+  </body>
+</html>
